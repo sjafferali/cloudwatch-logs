@@ -1,0 +1,8 @@
+[/var/log/redis/redis.log]
+datetime_format = %d %b %H:%M:%S
+file = /var/log/redis/redis.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /var/log/redis/redis.log
+multi_line_start_pattern = ^[0-9]+:[A-Z]
