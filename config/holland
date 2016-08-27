@@ -1,0 +1,8 @@
+[/var/log/holland/holland.log]
+datetime_format = %Y-%m-%d %H:%M:%S
+file = /var/log/holland/holland.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /var/log/holland/holland.log
+multi_line_start_pattern = {datetime_format}
