@@ -1,0 +1,7 @@
+[/var/log/php-fpm/error.log]
+datetime_format = %d-%b-%Y %H:%M:%S
+file = /var/log/php-fpm/error.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /var/log/php-fpm/error.log
