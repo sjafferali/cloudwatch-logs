@@ -36,6 +36,3 @@ if [[ -f /var/log/redis/redis.log ]]
 then
   wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/redis
 fi
-
-chkconfig awslogs on
-/etc/init.d/awslogs start
