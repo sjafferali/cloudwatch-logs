@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGION="us-west-2"
+REGION="us-east-1"
 CONFIG="https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/awslogs.conf"
 
 python <(curl -s https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py) -r $REGION -c $CONFIG --non-interactive
@@ -36,3 +36,29 @@ if [[ -f /var/log/redis/redis.log ]]
 then
   wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/redis
 fi
+
+if [[ -f /var/log/gunicorn/access_log ]]
+then
+  wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/gunicorn
+fi
+
+if [[ -f /opt/backupdir/logs/fs.log ]]
+then
+  wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/backup-fs
+fi
+
+if [[ -f /var/log/httpd/error_log ]]
+then
+  wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/httpd
+fi
+
+if [[ -f /usr/local/prm/logs/kill.log ]]
+then
+  wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/prm
+fi
+
+if [[ -f /opt/sandbox-toolkit/logs/api.log ]]
+then
+  wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/web-api
+fi
+
