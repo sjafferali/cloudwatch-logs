@@ -1,5 +1,5 @@
 [/var/log/messages]
-datetime_format = %b %d %H:%M:%S
+datetime_format = %b %e %H:%M:%S
 file = /var/log/messages
 buffer_duration = 5000
 log_stream_name = {hostname}
@@ -15,7 +15,7 @@ initial_position = start_of_file
 log_group_name = /var/log/bash_history
 
 [/var/log/secure]
-datetime_format = %b %d %H:%M:%S
+datetime_format = %b %e %H:%M:%S
 file = /var/log/secure
 buffer_duration = 5000
 log_stream_name = {hostname}
