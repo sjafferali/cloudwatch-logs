@@ -5,3 +5,11 @@ buffer_duration = 5000
 log_stream_name = {hostname}
 initial_position = start_of_file
 log_group_name = /opt/sandbox-toolkit/logs/api.log
+
+[/opt/sandbox-toolkit/logs/clear_log]
+datetime_format = %m-%d %H:%M
+file = /opt/sandbox-toolkit/logs/clear_log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /opt/sandbox-toolkit/logs/clear_log
