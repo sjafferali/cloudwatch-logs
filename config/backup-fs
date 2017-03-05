@@ -1,5 +1,5 @@
 [/opt/backupdir/logs/fs.log]
-datetime_format = %a %b %e %H:%M:%S %Z %Y
+datetime_format = %a %b %d %H:%M:%S %Z %Y
 file = /opt/backupdir/logs/fs.log
 buffer_duration = 5000
 log_stream_name = {hostname}
