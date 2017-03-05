@@ -1,0 +1,7 @@
+[/opt/backupdir/logs/sql.log]
+datetime_format = %a %b %e %H:%M:%S %Z %Y
+file = /opt/backupdir/logs/sql.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /opt/backupdir/logs/sql.log
