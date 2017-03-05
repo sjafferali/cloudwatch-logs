@@ -1,0 +1,7 @@
+[/opt/sandbox-toolkit/logs/api.log]
+datetime_format = %m/%d/%Y %I:%M:%S %p
+file = /opt/sandbox-toolkit/logs/api.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /opt/sandbox-toolkit/logs/api.log
