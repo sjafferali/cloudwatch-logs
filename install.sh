@@ -62,3 +62,5 @@ then
   wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/web-api
 fi
 
+systemctl enable awslogs
+systemctl restart awslogs
