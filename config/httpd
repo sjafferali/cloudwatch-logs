@@ -1,0 +1,15 @@
+[/var/log/httpd/error_log]
+datetime_format = %b %d %H:%M:%S.%f %Y
+file = /var/log/httpd/error_log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /var/log/httpd/error_log
+
+[/var/log/httpd/access_log]
+datetime_format = %d/%b/%Y:%H:%M:%S %z
+file = /var/log/httpd/access_log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = start_of_file
+log_group_name = /var/log/httpd/access_log
