@@ -3,7 +3,7 @@
 REGION="us-east-1"
 CONFIG="https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/awslogs.conf"
 
-python <(curl -s https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py) -r $REGION -c $CONFIG --non-interactive
+python <(curl -s https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/awslogs-agent-setup.py) -r $REGION -c $CONFIG --non-interactive
 
 wget -P /var/awslogs/etc/config/ https://raw.githubusercontent.com/sjafferali/cloudwatch-logs/master/config/comon
 
